@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CHATAPP</title>
+  <title>CHAT APP</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,21 +24,36 @@
 <body>
     <div class="container-fluid"><br>
 
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-center">
             <h1><span class="badge badge-info"> CHAT APP</span></h1>
         </div>
        <br><br><br>
-        <div class="row justify-content-md-center">
-            <input type="text" id="inpMsg">
+
+       <ul class="row justify-content-center" id="User">
+
+       </ul>
+<!-- LOGIN BOX -->
+       
+       <div class="row justify-content-center" id="loginBox">
+        
+            <input type="text" id="inpUsername" placeholder="Enter Username"><br>
+            <input type="password" id="inpPassword" placeholder="password">
+            <button id="btnStart" class="btn btn-success"> Start! </button>
+       </div>
+
+<!-- CHAT BOX -->
+        <div class="row justify-content-center" id="chatBox">
+            <input type="text" id="inpToUser" placeholder="Send to (Default Everyone)">
+            <input type="text" id="inpMsg" placeholder="New Message">
             <button id="btnSend" class="btn btn-success">SEND</button>
         </div>
-        
-
-        <ul class="list-group" id="ulMsgList">
-        </ul>
-
+        <br><br>
+        <div class="row justify-content-center">
+            <ul class="list-group"  id="ulMsgList">
+            </ul>
+        </div>
     </div>
-  
+    
    
 </body>
 </html>
